@@ -56,7 +56,7 @@ textBlb = TextBlob(incorrect_text)
 textBlb.correct().string
 ``
 
-Removing Stop words
+##Removing Stop words
 
 ``
 from nltk.corpus import stopwords
