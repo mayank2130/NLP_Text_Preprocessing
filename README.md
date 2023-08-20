@@ -1,6 +1,6 @@
 # NLP_Text_Preprocessing
 
-Lowercasing
+# Lowercasing
 
 
 ``
@@ -13,7 +13,7 @@ df.head()
 df['review'] = df['review].str.lower()
 ``
 
-Remove Html Tags
+# Remove Html Tags
 
 ``
 import re
@@ -36,7 +36,7 @@ df['review'] = df['review'].apply(remove_url)
 df
 ``
 
-Remove Punctuations
+# Remove Punctuations
 
 ``
 def remove_punc(text):
@@ -46,7 +46,7 @@ df['review'] = df['review'].apply(remove_punc)
 df
 ``
 
-Spell Checks
+# Spell Checks
 
 ``
 from textblob import TextBlob
@@ -56,7 +56,7 @@ textBlb = TextBlob(incorrect_text)
 textBlb.correct().string
 ``
 
-##Removing Stop words
+# Removing Stop words
 
 ``
 from nltk.corpus import stopwords
@@ -78,7 +78,7 @@ df['review'] = df['review'].apply(remove_stop_words)
 df
 ``
 
-Remove Emoji
+# Remove Emoji
 ``
 import re
 def remove_emoji(text):
